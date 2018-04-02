@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'landing_page',
     'mood',
     'music',
+    'meditation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -122,14 +123,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
-
 STATIC_URL = '/static/'
-
 STATCFILES_DIRS = (os.path.join(BASE_DIR, 'static'))
-
-
-
-#STATIC_ROOT = "C:\users\John\Desktop\serenity\django_branch\capstone_django_branch\static_root"

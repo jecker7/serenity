@@ -25,5 +25,6 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('mood/', include('mood.urls')),
     path('music/', include('music.urls')),
+    path('meditation/', include('meditation.urls')),
     path('', include('landing_page.urls'))
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

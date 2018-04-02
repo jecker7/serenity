@@ -1,0 +1,13 @@
+body {
+	 background-color: #gradient;
+   padding: -10px;
+   margin: 0px;
+ }
+
+#gradient {
+	position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
