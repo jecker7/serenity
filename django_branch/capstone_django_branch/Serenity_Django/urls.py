@@ -16,10 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include ('home_page.urls') ),
     path('accounts/', include('accounts.urls')),
+    path('mood/', include('mood.urls')),
+    path('music/', include('music.urls')),
     path('', include('landing_page.urls'))
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

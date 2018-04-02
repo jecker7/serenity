@@ -5,9 +5,49 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<button class="signup" href="#">Sign Up</button>
-<button class="login" href="#">Login</button>
-<p>
-  <a class = "link" href="#">Support</a>
-</p>
+<body id="landing-page">
+
+  <!-- Intro Header -->
+  <header class="masthead">
+    <div class="intro-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h1 class="logo">Serenity</h1>
+            <!--<h5>Only I can change my life. <br />No one can do it for me.<br /> — Carol Burnett</h5>-->
+            <button class="signup" href="#">Sign Up</button>
+            <button class="login" href="#">Login</button>
+            <p>
+              <a class = "link" href="#">Support</a>
+            </p>
+
+            <footer>
+              <div class="container text-center">
+                <p style="font-family: Cabin;"> Copyright &copy; Serenity 2018</p>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p style="font-family: Cabin;"> Copyright &copy; Serenity 2018</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{ % static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{ % static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{ % static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{ % static 'js/grayscale.min.js' %}"></script>
+
+</body>
 {% endblock %}
