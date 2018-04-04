@@ -298,9 +298,13 @@ footer p {
 .audio {
   margin: auto;
   width: 40%;
-  padding: 250px;
+  padding-top: 50px;
   text-align: center;
-}
+  }
+
+.title {
+    font-size: 50px;
+  }
 
 .audio button {
   background-color: #4ed2a1;
