@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'accounts',
-    'home_page',
+    'dashboard',
     'landing_page',
     'mood',
     'music',

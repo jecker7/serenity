@@ -21,9 +21,9 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', include ('home_page.urls') ),
+    path('dashboard/', include ('dashboard.urls')),
     path('accounts/', include('accounts.urls')),
-    path('mood/', include('mood.urls')),
+    path('mood/', include('mood.urls', namespace='mood')),
     path('music/', include('music.urls')),
     path('meditation/', include('meditation.urls')),
     path('', include('landing_page.urls'))
