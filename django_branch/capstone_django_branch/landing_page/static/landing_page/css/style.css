@@ -297,14 +297,14 @@ footer p {
 /* Music Styling */
 .audio {
   margin: auto;
-  width: 40%;
+  width: 100%;
   padding-top: 50px;
   text-align: center;
   }
 
 .title {
     font-size: 50px;
-  }
+}
 
 .audio button {
   background-color: #4ed2a1;
