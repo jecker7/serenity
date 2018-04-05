@@ -326,7 +326,7 @@ footer p {
 .text{
   text-align: center;
   font-family: 'Cabin', sans-serif;
-  line-height: 500px;
+  margin-top: 60px;
   color: white;
   font-weight: 100;
   text-transform: uppercase;
@@ -339,8 +339,9 @@ footer p {
   border-radius: 50%;
   background: rgba(17, 46, 212, 0.3);
   margin: auto;
-  margin-top: 80px;
+  margin-top: 10px;
   font-size: 50px
+  position: fixed;
 }
 
 .orb {
@@ -350,7 +351,7 @@ footer p {
   border-radius: 50%;
   background: red;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 10px;
 }
 
 .orb_1 {
