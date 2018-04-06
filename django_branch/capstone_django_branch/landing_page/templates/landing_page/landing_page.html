@@ -3,7 +3,7 @@
   https://codepen.io/P1N2O/pen/pyBNzX?depth=everything&order=popularity&page=3&q=gradient&show_forks=false
 -->
 {% extends 'base.html' %}
-
+{% load widget_tweaks %}
 {% block content %}
 
   <div class="landing-page">
@@ -14,8 +14,9 @@
             <div class="loginmodal-container">
               <h1>Login to Your Account</h1><br>
               <form>
-                {% csrf_token %}
-                {{form1}}
+              {% csrf_token %}
+              <br>{{form2.username}}
+              <br>{{form2.password}}
               <input type="submit" name="login" class="login loginmodal-submit" value="Login">
               </form>
 
@@ -33,7 +34,12 @@
               <h1>Sign Up for Serenity</h1><br>
               <form>
                 {% csrf_token %}
-                {{form2}}
+                <br>{{form1.username}}
+                <br>{{form1.first_name}}
+                <br>{{form1.last_name}}
+                <br>{{form1.email}}
+                <br>{{form1.password1}}
+                <br>{{form1.password2}}<br>
               <input type="submit" name="signup" class="login loginmodal-submit" value="Sign Up">
               </form>
 
