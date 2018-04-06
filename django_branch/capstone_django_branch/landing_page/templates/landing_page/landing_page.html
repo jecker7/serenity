@@ -8,14 +8,47 @@
 
   <div class="landing-page">
     <h1 class="logo">Serenity</h1>
-    <button class="signup" href="#">Sign Up</button>
-    <button class="login" href="#">Login</button>
+    <input type="submit" name="login" class="login loginmodal-submit" value="Login" data-toggle = "modal" data-target = "#login-modal">
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+            <div class="loginmodal-container">
+              <h1>Login to Your Account</h1><br>
+              <form>
+                {% csrf_token %}
+                {{form1}}
+              <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+              </form>
+
+              <div class="login-help">
+              <a href="#">Register</a> - <a href="#">Forgot Password</a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+    <input type="submit" name="signup" class="login loginmodal-submit" value="Signup" data-toggle = "modal" data-target = "#login-modal2">
+    <div class="modal fade" id="login-modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+            <div class="loginmodal-container">
+              <h1>Sign Up for Serenity</h1><br>
+              <form>
+                {% csrf_token %}
+                {{form2}}
+              <input type="submit" name="signup" class="login loginmodal-submit" value="Sign Up">
+              </form>
+
+              <div class="login-help">
+              <a href="#">Log In</a> - <a href="#">Forgot Password</a>
+              </div>
+            </div>
+          </div>
+          </div>
+
     <p>
       <a class = "link" href="#">Support</a>
     </p>
   </div>
 
-  <!-- Footer -->
   <footer>
     <div class="container text-center">
       <p style="font-family: Cabin;"> Copyright &copy; Serenity 2018</p>
