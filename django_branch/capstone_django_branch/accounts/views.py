@@ -14,7 +14,7 @@ def signup_view(request):
             #log the user in after
             #redirect to /home
             login(request, user)
-            return redirect('home')
+            return redirect('dashboard')
         else:
             return render(request, 'accounts/signup.html/', {'form':form})
     #if get, return a blank form
@@ -29,7 +29,7 @@ def login_view (request):
             #log in the user
             user = form.get_user()
             login(request, user)
-            return redirect('home')
+            return redirect('dashboard')
     else:
         form = SignUpForm()
     return render(request, 'accounts/login.html', {'form': form})

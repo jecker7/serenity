@@ -3,13 +3,12 @@
   https://codepen.io/P1N2O/pen/pyBNzX?depth=everything&order=popularity&page=3&q=gradient&show_forks=false
 -->
 {% extends 'base.html' %}
-{% load widget_tweaks %}
 {% block content %}
 
   <div class="landing-page">
     <h1 class="logo">Serenity</h1>
-    <input type="submit" name="login" class="login loginmodal-submit" value="Login" data-toggle = "modal" data-target = "#login-modal">
-    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <input type="submit" name="login" class="login loginmodal-submit"   value="Login" data-toggle = "modal" data-target = "#login-modal">
+    <div class="modal fade" id="login-modal"   role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog">
             <div class="loginmodal-container">
               <h1>Login to Your Account</h1><br>
@@ -27,8 +26,8 @@
           </div>
           </div>
 
-    <input type="submit" name="signup" class="login loginmodal-submit" value="Signup" data-toggle = "modal" data-target = "#login-modal2">
-    <div class="modal fade" id="login-modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <input type="submit" name="signup" class="login loginmodal-submit" value="Signup" data-toggle = "modal" data-target = "#login-modal2" >
+    <div class="modal fade" id="login-modal2"  data-backdrop = "static" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog">
             <div class="loginmodal-container">
               <h1>Sign Up for Serenity</h1><br>
@@ -40,7 +39,7 @@
                 <br>{{form1.email}}
                 <br>{{form1.password1}}
                 <br>{{form1.password2}}<br>
-              <input type="submit" name="signup" class="login loginmodal-submit" value="Sign Up">
+              <input type="submit" name="submit" class="btn btn-primary"  id ="modal-close-submit" value="Submit">
               </form>
 
               <div class="login-help">

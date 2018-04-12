@@ -21,10 +21,10 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('dashboard/', include ('dashboard.urls')),
-    path('accounts/', include('accounts.urls')),
-    path('mood/', include('mood.urls', namespace='mood')),
-    path('music/', include('music.urls')),
-    path('meditation/', include('meditation.urls')),
-    path('', include('landing_page.urls'))
+    path('dashboard/', include ('dashboard.urls'), name = "dashboard"),
+    path('accounts/', include('accounts.urls'), name = "accounts"),
+    path('mood/', include('mood.urls', namespace='mood'), name = "mood"),
+    path('music/', include('music.urls') , name = "music"),
+    path('meditation/', include('meditation.urls'), name = "meditation"),
+    path('', include('landing_page.urls') , name = "landing")
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
