@@ -5,4 +5,5 @@ from . import views
 urlpatterns = [
     #setting our url pattern to just the end of our string, accounts
     url(r'^$', views.dashboard, name = "dashboard"),
+
 ]

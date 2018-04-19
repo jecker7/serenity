@@ -38,3 +38,42 @@ def logout_view(request):
     if request.method == 'POST':
         logout(request)
         return redirect('landing_page')
+
+def fancy_signup_view(request):
+        #detect get or post
+        if request.method == 'POST':
+            form = RegisterUserForm(request.POST)
+            (request.POST)
+            #check if form is valid
+            if form.is_valid():
+                user = form.save()
+                #log the user in after
+                #redirect to /home
+                login(request, user)
+                return redirect('dashboard')
+            else:
+                return render(request, 'accounts/fancy_signup.html/', {'form1':form})
+        #if get, return a blank form
+        else:
+            form = RegisterUserForm()
+        return render(request, 'accounts/fancy_signup.html/', {'form1':form})
+
+
+def fancy_signup_view2(request):
+        #detect get or post
+        if request.method == 'POST':
+            form = RegisterUserForm(request.POST)
+            (request.POST)
+            #check if form is valid
+            if form.is_valid():
+                user = form.save()
+                #log the user in after
+                #redirect to /home
+                login(request, user)
+                return redirect('dashboard')
+            else:
+                return render(request, 'accounts/fancy_signup2.html/', {'form1':form})
+        #if get, return a blank form
+        else:
+            form = RegisterUserForm()
+        return render(request, 'accounts/fancy_signup2.html/', {'form1':form})

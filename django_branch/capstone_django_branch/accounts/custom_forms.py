@@ -15,22 +15,28 @@ class RegisterUserForm(UserCreationForm):
         super(RegisterUserForm, self).__init__(*args, **kwargs)
         self.fields['username'].widget.attrs.update({
             'id': 'userName',
-            'placeholder': 'username'})
+            'placeholder': 'username',
+            'style': 'color:black'})
         self.fields['first_name'].widget.attrs.update({
             'id': 'first_name',
-            'placeholder': 'first name'})
+            'placeholder': 'first name',
+            'style': 'color:black'})
         self.fields['last_name'].widget.attrs.update({
             'id': 'last_name',
-            'placeholder': 'last name'})
+            'placeholder': 'last name',
+            'style': 'color:black'})
         self.fields['email'].widget.attrs.update({
             'id': 'email',
-            'placeholder': 'email'})
+            'placeholder': 'email',
+            'style': 'color:black'})
         self.fields['password1'].widget.attrs.update({
             'id': 'password',
-            'placeholder': 'password'})
+            'placeholder': 'password',
+            'style': 'color:black'})
         self.fields['password2'].widget.attrs.update({
             'id': 'repeat password',
-            'placeholder': 'repeat password'})
+            'placeholder': 'repeat password',
+            'style': 'color:black'})
 
     #password password_validation
     def clean_password(self):
@@ -49,7 +55,9 @@ class SignUpForm(AuthenticationForm):
         super(SignUpForm, self).__init__(*args, **kwargs)
         self.fields['username'].widget.attrs.update({
             'id': 'userName',
-            'placeholder': 'username'})
+            'placeholder': 'username',
+            'style': 'color:black'})
         self.fields['password'].widget.attrs.update({
             'id': 'password',
-            'placeholder': 'password'})
+            'placeholder': 'password',
+            'style': 'color:black'})

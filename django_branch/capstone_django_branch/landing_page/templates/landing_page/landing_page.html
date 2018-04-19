@@ -16,14 +16,14 @@
               {% csrf_token %}
               <br>{{form2.username}}
               <br>{{form2.password}}
-              <input type="submit" name="login" class="login loginmodal-submit" value="Login">
               </form>
-
+              <input type="submit" name="login" class="btn btn-primary"  id ="modal-close-submit" value="Submit">
               <div class="login-help">
               <a href="#">Register</a> - <a href="#">Forgot Password</a>
               </div>
             </div>
           </div>
+          <input type="submit" name="login" class="login loginmodal-submit" value="Login">
           </div>
 
     <input type="submit" name="signup" class="login loginmodal-submit" value="Signup" data-toggle = "modal" data-target = "#login-modal2" >
@@ -39,9 +39,8 @@
                 <br>{{form1.email}}
                 <br>{{form1.password1}}
                 <br>{{form1.password2}}<br>
-              <input type="submit" name="submit" class="btn btn-primary"  id ="modal-close-submit" value="Submit">
               </form>
-
+              <input type="submit" name="submit" class="btn btn-primary"  id ="modal-close-submit" value="Submit">
               <div class="login-help">
               <a href="#">Log In</a> - <a href="#">Forgot Password</a>
               </div>
